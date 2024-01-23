@@ -2,6 +2,48 @@ apiVersion: v1
 entries:
   arcadia:
   - apiVersion: v2
+    appVersion: 0.1.0
+    created: "2024-01-23T07:22:22.8048013Z"
+    dependencies:
+    - condition: postgresql.enabled
+      name: postgresql
+      repository: ""
+      version: 13.2.14
+    - name: minio
+      repository: ""
+      version: 5.0.13
+    - condition: fastchat.enabled
+      name: fastchat
+      repository: ""
+      version: 0.0.3
+    - condition: chromadb.enabled
+      name: chromadb
+      repository: ""
+      version: 0.1.19
+    description: A Helm chart(KubeBB Component) for KubeAGI Arcadia
+    digest: 71fab4236ca89124d5d1b365db2100198b14b0a9537fa1622a7c4e0185ad7a17
+    keywords:
+    - LLMOps
+    - Kubernetes
+    maintainers:
+    - name: nkwangleiGIT
+      url: https://github.com/nkwangleiGIT
+    - name: bjwswang
+      url: https://github.com/bjwswang
+    - name: Abirdcfly
+      url: https://github.com/Abirdcfly
+    - name: 0xff-dev
+      url: https://github.com/0xff-dev
+    - name: lanture1064
+      url: https://github.com/lanture1064
+    name: arcadia
+    sources:
+    - https://github.com/kubeagi/arcadia
+    type: application
+    urls:
+    - https://github.com/GHOSTHSP/arcadia/releases/download/arcadia-0.2.17/arcadia-0.2.17.tgz
+    version: 0.2.17
+  - apiVersion: v2
     appVersion: 0.0.1
     created: "2023-12-08T12:56:55.391553926Z"
     dependencies:
@@ -999,6 +1041,17 @@ entries:
     urls:
     - https://github.com/kubeagi/arcadia/releases/download/jupyterlab-0.1.0/jupyterlab-0.1.0.tgz
     version: 0.1.0
+  kuberay-operator:
+  - apiVersion: v2
+    created: "2024-01-23T07:22:23.01829464Z"
+    description: A Helm chart for Kubernetes
+    digest: f942a52c8b17287101c841547655a4181444057bc3e8961ee409dd888e14f5c0
+    icon: https://github.com/ray-project/ray/raw/master/doc/source/images/ray_header_logo.png
+    name: kuberay-operator
+    type: application
+    urls:
+    - https://github.com/GHOSTHSP/arcadia/releases/download/kuberay-operator-1.0.0/kuberay-operator-1.0.0.tgz
+    version: 1.0.0
   llm-worker:
   - apiVersion: v2
     appVersion: 0.2.32
@@ -1060,4 +1113,4 @@ entries:
     urls:
     - https://github.com/kubeagi/arcadia/releases/download/llms-0.1.0/llms-0.1.0.tgz
     version: 0.1.0
-generated: "2023-12-08T12:56:55.391843717Z"
+generated: "2024-01-23T07:22:23.262044001Z"
